@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$dark-color: #4e4e4e;
+$light-color:#a8a8a8;
+$link-hover-color: #4dc6af;
+$background-full: #e6e6e6;
+
+@mixin mixin-text ($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+@mixin hover-transition {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+%a-style {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+%div-text-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+%p-style {
+    font-family: 'Roboto', sans-serif;
+    @include mixin-text (#878787, 12px);
+    line-height: 1.7;
+}
+
+%flex-position {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    background: $background-full;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    nav {
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger {
+        img {
+            display: none;
+        }
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+a {
+    padding: 0 10px;
+    @extend %a-style;
+    color: $dark-color;
+    @include hover-transition;
+
+    &:hover, &:focus {
+        color: $link-hover-color;
+    }
+}
+
+p {
+    @extend %p-style;
+}
+
+h2, h3 {
+    color: #4e4e4e;
+}
+
+.image {
+    @extend %div-text-position;
+
+        .img-wrapper {
+            position: relative;
+             img {
+                 width: 100%;
+             }
+        }
+
+        .text-wrapper {
+            position: absolute;
+            a {
+                @include hover-transition;
+            }
+        }
+
+    h1 {
+        padding: 3% 0;
+        @include mixin-text (white, 2vw);
+    }
+
+    h2 {
+        padding-bottom: 7%;
+        @include mixin-text ($light-color, 1.5vw);
+    }
+
+    a {
+        padding: 15px 20px;
+        background: #3f8dbf;
+        border-radius: 3px;
+        border-bottom: 4px solid #3678a3;
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        @include mixin-text (white, 10px);
+        @include hover-transition;
+
+        &:hover, &:focus {
+            color: black;
+            background: $link-hover-color;
+            border-bottom: 4px solid #10725e;
+        }
+    }
+}
+
+main {
+    padding: 0px 100px;
+}
+
+.offer-items-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+   @extend %flex-position;
+
+    div {
+        @extend %div-text-position;
+        width: 200px;
+        img {
+            padding: 10px;
+        }
+        h3 {
+            padding: 10px;
+        }
+        p {
+            @extend %p-style;
+            }
+        }
+}
+
+.latest-works {
+    padding: 40px 0;
+    display: flex;
+        flex-direction: column;
+    border-top: 1px, solid $dark-color;
+
+    h2 {
+        @extend %a-style;
+        padding: 15px 17px;
+        color: #4e4e4e;
+        text-align: center;
+    }
+
+.works-wrapper {
+   @extend %flex-position;
+   flex-wrap: wrap;
+
+   div {
+       max-width: 385px;
+       margin: 3px;
+       overflow: hidden;
+
+       h3 {
+           padding-top: 10px;
+       }
+
+       span {
+           padding: 10px 0;
+           @include mixin-text (#a8a8a8, 13px);
+       }
+
+       p {
+        padding: 10px 0;
+       }
+   }
+}}
+
+.text {
+    padding: 40px;
+    @extend %div-text-position;
+    background: #efefef;
+
+    span {
+        padding: 20px;
+        width: 50%;
+        @include mixin-text($light-color, 20px);
+    }
+}
+
+footer {
+    padding: 30px 100px;
+    background: #202020;
+
+    .information-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid $dark-color;
+       
+        .information-block {
+            padding: 0 20px;
+            width: 260px;
+
+            h2 {
+                padding: 10px 0px;
+            }
+
+            div {
+                padding: 5px 0;
+
+                img {
+                    padding: 10px;
+                    float: left;
+                    max-width: 13px;
+                    max-height: 13px; 
+                    }
+
+                p {
+                    padding:5px;
+                    font-size: 13px;
+                    }
+                }
+
+            
+            .data {
+                padding-left: 5px;
+                @include mixin-text($light-color, 11px);
+            }
+    }}
+
+    h2 {
+      @extend %a-style;  
+    }
+
+    .tm-wrapper {
+        padding-top: 30px;
+
+    }
+}

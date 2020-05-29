@@ -1,0 +1,48 @@
+$dark-color: #4e4e4e;
+$light-color:#a8a8a8;
+$link-hover-color: #4dc6af;
+
+@media screen and (max-width:450px) {
+    body .image {
+        img {
+            min-height: 200px;
+        }
+        .text-wrapper {
+            h1 {
+                padding: 5%;
+                font-size: 5vw;
+            }
+            h2 {
+                display: none;
+            }
+            a {
+                font-size: 2vw;
+            }
+        }
+    }
+    hr {
+        min-width: 300px;
+    }
+
+    .text {
+        span {
+            font-size: 23px;
+            width: 90%;
+        }
+    }
+
+   body footer {
+        padding: 20px 20px;
+
+        .information-wrapper {
+
+            padding-left: 5%;
+            padding-right: 2%;
+
+            .information-block {
+                padding: 0;
+                width: 100%;
+        }
+    }
+    }
+}

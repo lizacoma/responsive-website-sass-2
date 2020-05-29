@@ -1,0 +1,23 @@
+@media screen and (max-width: 450px) {
+  body .image img {
+    min-height: 200px; }
+  body .image .text-wrapper h1 {
+    padding: 5%;
+    font-size: 5vw; }
+  body .image .text-wrapper h2 {
+    display: none; }
+  body .image .text-wrapper a {
+    font-size: 2vw; }
+  hr {
+    min-width: 300px; }
+  .text span {
+    font-size: 23px;
+    width: 90%; }
+  body footer {
+    padding: 20px 20px; }
+    body footer .information-wrapper {
+      padding-left: 5%;
+      padding-right: 2%; }
+      body footer .information-wrapper .information-block {
+        padding: 0;
+        width: 100%; } }

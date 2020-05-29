@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a, .latest-works h2, footer h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px; }
+
+.image, .offer-items-container-1 div, .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+p, .offer-items-container-1 div p {
+  font-family: 'Roboto', sans-serif;
+  color: #878787;
+  font-size: 12px;
+  line-height: 1.7; }
+
+.offer-items-container-1, .latest-works .works-wrapper {
+  display: flex;
+  justify-content: space-around; }
+
+body {
+  background: #e6e6e6;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+header nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around; }
+
+header .burger img {
+  display: none; }
+
+header ul {
+  display: flex;
+  list-style-type: none; }
+
+a {
+  padding: 0 10px;
+  color: #4e4e4e;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  a:hover, a:focus {
+    color: #4dc6af; }
+
+h2, h3 {
+  color: #4e4e4e; }
+
+.image .img-wrapper {
+  position: relative; }
+  .image .img-wrapper img {
+    width: 100%; }
+
+.image .text-wrapper {
+  position: absolute; }
+  .image .text-wrapper a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.image h1 {
+  padding: 3% 0;
+  color: white;
+  font-size: 2vw; }
+
+.image h2 {
+  padding-bottom: 7%;
+  color: #a8a8a8;
+  font-size: 1.5vw; }
+
+.image a {
+  padding: 15px 20px;
+  background: #3f8dbf;
+  border-radius: 3px;
+  border-bottom: 4px solid #3678a3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .image a:hover, .image a:focus {
+    color: black;
+    background: #4dc6af;
+    border-bottom: 4px solid #10725e; }
+
+main {
+  padding: 0px 100px; }
+
+.offer-items-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 40px; }
+  .offer-items-container-1 div {
+    width: 200px; }
+    .offer-items-container-1 div img {
+      padding: 10px; }
+    .offer-items-container-1 div h3 {
+      padding: 10px; }
+
+.latest-works {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px, solid #4e4e4e; }
+  .latest-works h2 {
+    padding: 15px 17px;
+    color: #4e4e4e;
+    text-align: center; }
+  .latest-works .works-wrapper {
+    flex-wrap: wrap; }
+    .latest-works .works-wrapper div {
+      max-width: 385px;
+      margin: 3px;
+      overflow: hidden; }
+      .latest-works .works-wrapper div h3 {
+        padding-top: 10px; }
+      .latest-works .works-wrapper div span {
+        padding: 10px 0;
+        color: #a8a8a8;
+        font-size: 13px; }
+      .latest-works .works-wrapper div p {
+        padding: 10px 0; }
+
+.text {
+  padding: 40px;
+  background: #efefef; }
+  .text span {
+    padding: 20px;
+    width: 50%;
+    color: #a8a8a8;
+    font-size: 20px; }
+
+footer {
+  padding: 30px 100px;
+  background: #202020; }
+  footer .information-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4e4e4e; }
+    footer .information-wrapper .information-block {
+      padding: 0 20px;
+      width: 260px; }
+      footer .information-wrapper .information-block h2 {
+        padding: 10px 0px; }
+      footer .information-wrapper .information-block div {
+        padding: 5px 0; }
+        footer .information-wrapper .information-block div img {
+          padding: 10px;
+          float: left;
+          max-width: 13px;
+          max-height: 13px; }
+        footer .information-wrapper .information-block div p {
+          padding: 5px;
+          font-size: 13px; }
+      footer .information-wrapper .information-block .data {
+        padding-left: 5px;
+        color: #a8a8a8;
+        font-size: 11px; }
+  footer .tm-wrapper {
+    padding-top: 30px; }
